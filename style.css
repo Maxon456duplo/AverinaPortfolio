@@ -10,8 +10,6 @@ html {
 @font-face{
     font-family:Shlapak Script;
     src: url(/fonts/Shlapak/Script.otf);
-    font-weight: normal;
-    font-style: normal;
 }
 .container{
     width: 100%;
