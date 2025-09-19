@@ -7,6 +7,12 @@
 html {
     scroll-behavior: smooth;
 }
+@font-face{
+    font-family:'Shlapak Script';
+    src: url(/fonts/Shlapak\ Script.otf) format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
 .container{
     width: 100%;
     margin: 0 auto;
