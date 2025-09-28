@@ -9,8 +9,12 @@ html {
     scroll-behavior: smooth;
 }
 @font-face {
-	font-family:Shlapak Script;
-	src: url(/fonts/Shlapak\Script.otf) format('opentype');
+    font-family: 'Shlapak Script';
+    src: url('fonts/Shlapak Script.otf') format('opentype'),
+         url('fonts/Shlapak-Script.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 .container{
     width: 100%;
@@ -332,13 +336,9 @@ footer{
     justify-content: center;
     flex-direction: column;
     background-color: #f2b9bf;
-    text-transform: uppercase;
-    padding: 40px 0;
-    background-image: url(img/bckg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
+    color: #424242;
+    padding: 20px 0;
+
 }
 footer .box__icons{
     align-items: center;
@@ -347,8 +347,11 @@ footer .box__icons{
     flex-direction: column;
     margin-top: 20px;
 }
+footer h3{
+    letter-spacing: 2px;
+}
 footer h4{
-    font-size: 20px;
+    letter-spacing: 2px;
     margin: 5px 0;
 
 }
@@ -371,17 +374,6 @@ footer .box__icons a i:hover{
     /* ...остальные стили... */
 }
 
-.montage-noise {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    pointer-events: none; /* клики проходят сквозь */
-    z-index: 2;
-    opacity: 0.13; /* прозрачность слоя */
-    background: 
-        url('img/noise-texture.jpg') repeat, /* шум */
-        url('img/Chrom__Moon.png') center/cover no-repeat; /* изображение */
-    mix-blend-mode: multiply; /* мягкое наложение */
-}
 .autoDisplay{
     animation: autoDisplayAnimation linear both;
     animation-timeline: view();
